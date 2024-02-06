@@ -108,7 +108,7 @@
             />
           </svg>
           <div class="big">
-            <button class="b1">
+            <button id="toggleForm" class="b1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -135,8 +135,34 @@
                   fill="white"
                 />
               </svg>
+              <!-- <form id="login-form">
+                <div class="all">
+                  <div class="mi">
+                    <p class="katalog-p">Молоко, сыр, яйцо</p>
+                    <p class="katalog-p">Хлеб</p>
+                    <p class="katalog-p">Фрукты и овощи</p>
+                    <p class="katalog-p">Замороженные продукты</p>
+                  </div>
+                  <div class="mi">
+                    <p class="katalog-p">Напитки</p>
+                    <p class="katalog-p">Кондитерские изделия</p>
+                    <p class="katalog-p">Чай, кофе</p>
+                  </div>
+                  <div class="mi">
+                    <p class="katalog-p">Бакалея</p>
+                    <p class="katalog-p">Здоровое питание</p>
+                    <p class="katalog-p">Зоотовары</p>
+                  </div>
+                  <div class="mi">
+                    <p class="katalog-p">Непродовольственные товары</p>
+                    <p class="katalog-p">Детское питание</p>
+                    <p class="katalog-p">Мясо, птица, колбаса</p>
+                  </div>
+                </div>
+              </form> -->
               Каталог
             </button>
+
             <form action="Search">
               <input
                 class="in1"
@@ -201,7 +227,7 @@
                     fill="#414141"
                   />
                 </svg>
-                <p>Продукты</p>
+                <a class="nav-a" href="/pages/products.html">Продукты</a>
               </div>
               <div class="fiicon">
                 <svg
@@ -314,39 +340,27 @@
         <div class="container">
           <div class="big2">
             <div class="sNav">
-              <h2 class="hh">Акции</h2>
+              <h2 class="hha">Акции</h2>
               <div class="vseP">
-                <p
-                  class="piip"
-                  style="
-                    text-decoration: none;
-                    color: var(--grayscale-hardest, #606060);
-                    text-align: center;
+                <a class="piip" href="./pages/products.html"
+                  >Все продукты
 
-                    /* Desc/Text/S */
-                    font-family: sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%; /* 24px */
-                  "
-                >
-                  Все продукты
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
-                    fill="#606060"
-                  />
-                </svg>
+                  <svg
+                    class="product-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                      fill="#606060"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="cards">
@@ -907,37 +921,25 @@
             <div class="sNav">
               <h2 class="hh">Новинки</h2>
               <div class="vseP">
-                <p
-                  class="piip"
-                  style="
-                    text-decoration: none;
-                    color: var(--grayscale-hardest, #606060);
-                    text-align: center;
+                <a class="piip" href="./pages/products.html"
+                  >Все продукты
 
-                    /* Desc/Text/S */
-                    font-family: sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%; /* 24px */
-                  "
-                >
-                  Все продукты
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
-                    fill="#606060"
-                  />
-                </svg>
+                  <svg
+                    class="product-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                      fill="#606060"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="cards">
@@ -1369,37 +1371,25 @@
             <div class="sNav">
               <h2 class="hh">Покупали раньше</h2>
               <div class="vseP">
-                <p
-                  class="piip"
-                  style="
-                    text-decoration: none;
-                    color: var(--grayscale-hardest, #606060);
-                    text-align: center;
+                <a class="piip" href="./pages/products.html"
+                  >Все продукты
 
-                    /* Desc/Text/S */
-                    font-family: sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%; /* 24px */
-                  "
-                >
-                  Все продукты
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
-                    fill="#606060"
-                  />
-                </svg>
+                  <svg
+                    class="product-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                      fill="#606060"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="cards">
@@ -1877,37 +1867,25 @@
             <div class="sNav">
               <h2 class="hh">Статьи</h2>
               <div class="vseP">
-                <p
-                  class="piip"
-                  style="
-                    text-decoration: none;
-                    color: var(--grayscale-hardest, #606060);
-                    text-align: center;
+                <a class="piip" href="./pages/products.html"
+                  >Все продукты
 
-                    /* Desc/Text/S */
-                    font-family: sans-serif;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 150%; /* 24px */
-                  "
-                >
-                  Все продукты
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
-                    fill="#606060"
-                  />
-                </svg>
+                  <svg
+                    class="product-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z"
+                      fill="#606060"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="cardss">
