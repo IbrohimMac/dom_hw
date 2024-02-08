@@ -63,6 +63,7 @@ header {
         font-weight: 400;
         line-height: 150%; /* 24px */
         border: 1px solid #70c05b;
+        cursor: pointer;
         svg {
           margin-left: 5px;
         }
@@ -111,6 +112,15 @@ header {
         width: 272px;
         height: 24px;
       }
+      .katalog-p-1 {
+        width: 272px;
+        height: 24px;
+        color: black;
+      }
+      .katalog-p-1:hover {
+        color: #f63;
+        transition: 0.3s;
+      }
       #login-form.open {
         display: block;
       }
@@ -123,7 +133,6 @@ header {
         align-items: flex-start;
         gap: 10px;
         flex: 1 0 0;
-        // margin-left: 364px;
       }
     }
     .big1 {
@@ -148,6 +157,25 @@ header {
             top: 20px;
             margin-left: -30px;
           }
+          p {
+            color: var(--main-on-surface, #414141);
+          }
+        }
+        .ficon {
+          &:hover {
+            svg path {
+              fill: #fcd5ba;
+              transition: 0.3s;
+            }
+            p {
+              color: #fcd5ba;
+              transition: 0.3s;
+            }
+            a {
+              color: #fcd5ba;
+              transition: 0.3s;
+            }
+          }
         }
         .fiicon {
           .s3 {
@@ -159,6 +187,23 @@ header {
             margin-top: 10px;
           }
         }
+        .fiicon {
+          &:hover {
+            svg path {
+              fill: #fcd5ba;
+              transition: 0.3s;
+            }
+            p {
+              color: #fcd5ba;
+              transition: 0.3s;
+            }
+            a {
+              color: #fcd5ba;
+              transition: 0.3s;
+            }
+          }
+        }
+
         .alek {
           display: flex;
           gap: 20px;
@@ -169,18 +214,26 @@ header {
             margin-left: 10px;
           }
         }
-        :hover.s2 path {
-          fill: #ffd3af;
-          transition: 0.3s;
+        .nav-pi-1 {
+          color: var(--main-on-surface, #414141);
         }
-        :hover.s3 path {
-          fill: #ffd3af;
-          transition: 0.3s;
+        .s2 {
+          position: relative;
+          left: 20px;
+          top: 8px;
+        }
+        .nav-a {
+          text-decoration: none;
+          font-family: sans-serif;
+          color: #414141;
+          position: relative;
+          top: 20px;
+          margin-left: -30px;
         }
       }
-    }
-    p {
-      font-family: sans-serif;
+      p {
+        font-family: sans-serif;
+      }
     }
   }
 }
@@ -938,8 +991,8 @@ footer {
   cursor: pointer;
 }
 .vhodBUT1:hover {
-  background-color: #fff;
-  border: 1px solid #000000;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   color: var(--grayscale-hardest, #606060);
   text-align: center;
 
