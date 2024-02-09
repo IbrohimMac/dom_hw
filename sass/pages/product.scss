@@ -492,7 +492,6 @@ main {
       margin-left: 70px;
       .main-card {
         width: 272px;
-        // height: 189px;
         padding: 8px;
         gap: 8px;
         background-color: white;
@@ -528,7 +527,7 @@ main {
         }
         button {
           width: 256px;
-
+          cursor: pointer;
           border-radius: 4px;
           gap: 8px;
           margin-top: 8px;
@@ -649,6 +648,7 @@ main {
           text-align: center;
           color: #70c05b;
           border: 1px solid #70c05b;
+          cursor: pointer;
         }
         button:hover {
           color: white;

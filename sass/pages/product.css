@@ -495,6 +495,7 @@ main .sec2 .main-cards .main-card .card-star {
 }
 main .sec2 .main-cards .main-card button {
   width: 256px;
+  cursor: pointer;
   border-radius: 4px;
   gap: 8px;
   margin-top: 8px;
@@ -611,6 +612,7 @@ main .sec3 .main-cards .main-card button {
   text-align: center;
   color: #70c05b;
   border: 1px solid #70c05b;
+  cursor: pointer;
 }
 main .sec3 .main-cards .main-card button:hover {
   color: white;
