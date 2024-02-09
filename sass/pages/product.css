@@ -247,192 +247,376 @@ main .sec1 .first-main-p {
 main .sec1 .first-main-p p {
   color: #414141;
 }
-main .sec1 .main-car-i {
-  margin-top: 400px;
+main .sec1 .big {
+  display: flex;
 }
 main .sec1 .carousel {
+  max-width: 600px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 23px;
+  overflow: hidden;
+}
+main .sec1 .carousel .carousel-item {
+  display: none;
+}
+main .sec1 .carousel .carousel-item-hidden {
+  animation: fadeHidden 0.5s;
+}
+main .sec1 .carousel .carousel-item-visible {
   display: block;
+  animation: fadeVisibility 0.5s;
+}
+main .sec1 .carousel .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+main .sec1 .carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .sec1 .carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+main .sec1 .carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+main .sec1 .carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+main .sec1 .carousel-dots {
+  text-align: center;
+}
+main .sec1 .dot {
+  opacity: 0.7;
+}
+main .sec1 .dot:focus {
+  border: 1px solid black;
+}
+@keyframes fadeVisibility {
+  0% {
+    /* opacity: 0; */
+    transform: translateX(-100%);
+  }
+  100% {
+    /* opacity: 1; */
+    transform: translateX(0);
+  }
+}
+@keyframes fadeHidden {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+main .sec1 .main-mini {
+  margin-left: 40px;
+  margin-top: 36px;
+}
+main .sec1 .main-mini .vme {
+  display: flex;
+  gap: 321px;
+}
+main .sec1 .main-mini .vme p {
+  color: #606060;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
   text-align: left;
-  position: relative;
-  margin-bottom: 22px;
 }
-main .sec1 .carousel > input {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+main .sec1 .main-mini .vme h1 {
+  color: #414141;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: -5px;
 }
-main .sec1 .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -500%;
+main .sec1 .main-mini .vme .vme-p {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bfbfbf;
 }
-main .sec1 .carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -400%;
+main .sec1 .main-mini .vme .vme-p-1 {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bfbfbf;
+  margin-left: 13px;
 }
-main .sec1 .carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -300%;
-}
-main .sec1 .carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -200%;
-}
-main .sec1 .carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -100%;
-}
-main .sec1 .carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: 0%;
-}
-main .sec1 .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-main .sec1 .carousel__slides {
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
+main .sec1 .main-mini .but1 {
   display: flex;
-}
-main .sec1 .carousel__slide {
-  position: relative;
-  display: block;
-  flex: 1 0 100%;
-  width: 100px;
-  height: 100%;
-  overflow: hidden;
-  transition: all 300ms ease-out;
-  margin-top: -390px;
-  box-sizing: border-box;
-  white-space: normal;
-}
-main .sec1 .carousel__slide figure {
-  display: flex;
-  margin: 0;
-}
-main .sec1 .carousel__slide div {
-  position: relative;
-  width: 100%;
-}
-main .sec1 .carousel__slide div:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 66.6666666667%;
-}
-main .sec1 .carousel__slide div > .main-car-i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 500px;
-}
-main .sec1 .carousel__slide div > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-main .sec1 .carousel__slide img {
-  display: block;
-  flex: 1 1 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .sec1 .carousel__slide figcaption {
-  align-self: flex-end;
-  padding: 20px 20px 0 20px;
-  flex: 0 0 auto;
-  width: 25%;
-  min-width: 150px;
-}
-main .sec1 .carousel__slide .credit {
-  margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-main .sec1 .carousel__slide.scrollable {
-  overflow-y: scroll;
-}
-main .sec1 .carousel__thumbnails {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 700px;
-  margin: 0 -10px;
-  margin-left: -160px;
-  margin-top: -490px;
-  display: block;
-}
-.carousel__slides + main .sec1 .carousel__thumbnails {
-  /* margin-top: 20px; */
-}
-main .sec1 .carousel__thumbnails li {
-  flex: 1 1 auto;
-  max-width: calc(16.6666666667% - 20px);
-  margin: 0 10px;
-  transition: all 300ms ease-in-out;
-}
-main .sec1 .carousel__thumbnails label {
-  display: block;
-  position: relative;
-}
-main .sec1 .carousel__thumbnails label:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 100%;
-}
-main .sec1 .carousel__thumbnails label > .main-car-i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 500px;
-}
-main .sec1 .carousel__thumbnails label > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-main .sec1 .carousel__thumbnails label:hover, main .sec1 .carousel__thumbnails label:focus {
+  background-color: #ff6633;
+  width: 279px;
+  height: 60px;
+  padding: 16px;
+  border-radius: 4px;
+  gap: 8px;
+  padding-left: 25px;
+  margin-left: 130px;
+  margin-top: 16px;
   cursor: pointer;
 }
-main .sec1 .carousel__thumbnails label:hover img, main .sec1 .carousel__thumbnails label:focus img {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  transition: all 300ms ease-in-out;
+main .sec1 .main-mini .but1 p {
+  width: 207px;
+  height: 28px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: -3px;
 }
-main .sec1 .carousel__thumbnails img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+main .sec1 .main-mini .but1:hover {
+  background-color: rgb(243, 84, 31);
+  transition: 0.3s;
+}
+main .sec1 .main-mini .tablitsa {
+  margin-top: 28px;
+}
+main .sec1 .main-mini .tablitsa .tab-1 {
+  width: 584px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  background-color: #f3f2f1;
+  gap: 40px;
+}
+main .sec1 .main-mini .tablitsa .tab-1 p {
+  width: 161px;
+  height: 18px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+main .sec1 .main-mini .tablitsa .tab-1 h5 {
+  width: 108px;
+  height: 18px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+main .sec1 .main-mini .tablitsa .tab-1:hover {
+  background-color: #fbf8ec;
+  transition: 0.4s;
+}
+main .sec2 {
+  margin-top: 120px;
+  margin-left: 20px;
+}
+main .sec2 .sec-2-h {
+  width: 1208px;
+  height: 54px;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+main .sec2 .main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+main .sec2 .main-cards .main-card {
+  width: 272px;
+  padding: 8px;
+  gap: 8px;
+  background-color: white;
+}
+main .sec2 .main-cards .main-card h2 {
+  width: 60px;
+  height: 27px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec2 .main-cards .main-card p {
+  width: 256px;
+  height: 48px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec2 .main-cards .main-card .card-star {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec2 .main-cards .main-card button {
+  width: 256px;
+  border-radius: 4px;
+  gap: 8px;
+  margin-top: 8px;
+  margin-left: 5px;
+  width: 240px;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #70c05b;
+  border: 1px solid #70c05b;
+}
+main .sec2 .main-cards .main-card button:hover {
+  color: white;
+  background-color: #f63;
+  transition: 0.3s;
+  border: none;
+}
+main .sec3 {
+  margin-left: 20px;
+  margin-top: 120px;
+}
+main .sec3 .sec-2-h {
+  width: 1208px;
+  height: 54px;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+main .sec3 .main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+main .sec3 .main-cards .main-card {
+  width: 272px;
+  padding: 8px;
+  gap: 8px;
+  background-color: white;
+}
+main .sec3 .main-cards .main-card .vmes {
+  display: flex;
+  gap: 143px;
+}
+main .sec3 .main-cards .main-card .vmes h2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+}
+main .sec3 .main-cards .main-card .vmes p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main .sec3 .main-cards .main-card h2 {
+  width: 60px;
+  height: 27px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec3 .main-cards .main-card p {
+  width: 256px;
+  height: 48px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #414141;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec3 .main-cards .main-card .card-star {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+main .sec3 .main-cards .main-card button {
+  width: 256px;
+  border-radius: 4px;
+  gap: 8px;
+  margin-top: 8px;
+  margin-left: 5px;
+  width: 240px;
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #70c05b;
+  border: 1px solid #70c05b;
+}
+main .sec3 .main-cards .main-card button:hover {
+  color: white;
+  background-color: #f63;
+  transition: 0.3s;
+  border: none;
 }
 
 .vmefoot {
@@ -443,6 +627,7 @@ main .sec1 .carousel__thumbnails img {
 footer {
   height: 160px;
   background: var(--main-bg-page, #f8f3df);
+  margin-top: 72px;
 }
 
 .foot {
