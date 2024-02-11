@@ -67,3 +67,5 @@ for (let i = 0; i < dots.length; i++) {
     slides[i].classList.add("carousel-item-visible");
   });
 }
+
+///////////////  KORZINA /////////

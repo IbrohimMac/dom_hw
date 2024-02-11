@@ -342,6 +342,52 @@ main .sec1 .big .pp:hover {
   line-height: 150%; /* 24px */
   transition: 0.7s;
 }
+main .products-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+main .products-card {
+  flex-basis: 300px;
+  box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+main .products-img {
+  width: 100%;
+}
+main .card-content {
+  padding: 20px;
+}
+main .but2 {
+  width: 230px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70c05b);
+  color: var(--main-secondary, #70c05b);
+  text-align: center;
+  /* Desc/Text/S */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  cursor: pointer;
+  margin-left: 10px;
+}
+main .but2:hover {
+  background-color: #f63;
+  border: 1px solid #f63;
+  color: white;
+  transition: 0.7s;
+  cursor: pointer;
+}
 
 .vmefoot {
   display: flex;
