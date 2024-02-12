@@ -49,8 +49,11 @@ function displayProducts(products) {
       </div>
       <h3 class="cart-price">${product.price}$</h3>
       <div class="flex gap-3 py-2">
-      <button style="margin-top: 4px;" class="btn btn-outline-danger" onclick="removeFromCart(${product.id})">Remove</button>
-      <button style="margin-top: 4px;"  class="btn btn-success">Checkout</button>
+      <button class="back-cart" onclick="removeFromCart(${product.id})">Remove</button>
+      <button class="back-cart">Checkout</button>
+      <button class="back-cart">
+            <a href="./products.html" class="btn btn-outline-dark">Back</a>
+          </button>
       </div>
           </div>
         </div>

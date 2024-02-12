@@ -242,7 +242,71 @@ header {
 main {
   margin-top: 150px;
   section {
+    .cart-big {
+      display: flex;
+      gap: 16px;
+      a {
+        width: 46px;
+        height: 18px;
+        color: black;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 3px;
+      }
+      p {
+        margin-top: 3px;
+        width: 49px;
+        height: 18px;
+        color: #8f8f8f;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    .big-h2 {
+      //styleName: Desc/Header/XL;
+      font-family: sans-serif;
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 96px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 280px;
+      height: 96px;
+      color: #414141;
+      margin-top: 24px;
+    }
+    .back-cart {
+      background-color: #f63;
+      border: #f63;
+      border-radius: 5px;
+      width: 80px;
+      height: 30px;
+      margin-top: 10px;
+      margin-right: 3px;
+      cursor: pointer;
+      a {
+        color: black;
+      }
+    }
+    .back-cart:hover {
+      background-color: black;
+      color: white;
+      transition: 0.4s;
+      a {
+        color: white;
+      }
+    }
     .card {
+      background-color: white;
+      border: 1px solid black;
       width: 1100px;
       margin-top: 40px;
       padding-top: 5px;
@@ -276,7 +340,7 @@ main {
     }
     .cart-price {
       font-family: sans-serif;
-      width: 120px;
+      width: 100px;
       height: 43px;
       padding: 8px;
       margin-top: 4px;

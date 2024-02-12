@@ -226,7 +226,70 @@ header nav .big1 p {
 main {
   margin-top: 150px;
 }
+main section .cart-big {
+  display: flex;
+  gap: 16px;
+}
+main section .cart-big a {
+  width: 46px;
+  height: 18px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 3px;
+}
+main section .cart-big p {
+  margin-top: 3px;
+  width: 49px;
+  height: 18px;
+  color: #8f8f8f;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main section .big-h2 {
+  font-family: sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 280px;
+  height: 96px;
+  color: #414141;
+  margin-top: 24px;
+}
+main section .back-cart {
+  background-color: #f63;
+  border: #f63;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+main section .back-cart a {
+  color: black;
+}
+main section .back-cart:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+main section .back-cart:hover a {
+  color: white;
+}
 main section .card {
+  background-color: white;
+  border: 1px solid black;
   width: 1100px;
   margin-top: 40px;
   padding-top: 5px;
@@ -259,7 +322,7 @@ main section .cart-h-p h6 {
 }
 main section .cart-price {
   font-family: sans-serif;
-  width: 120px;
+  width: 100px;
   height: 43px;
   padding: 8px;
   margin-top: 4px;
